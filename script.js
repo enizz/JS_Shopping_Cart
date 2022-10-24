@@ -8,18 +8,14 @@ let productOne = new Product(Toothbrush, 5.99);
 let productTwo = new Product(Toothpaste, 8.99);
 let productThree = new Product(Floss, .99);
 let productFour = new Product(WaterPik, 53.99)
-let productList = document.querySelector(".product-list")
-let productObjects = [
-    {
-      name: "Toothbrush",
-    },
-    {
-      name: "Toothpaste",
-    },
-    {
-      name: "Floss",
-    },
-    {
-      name: "WaterPik",
-    },
-  ];
+
+function displayproductList(){
+  let productList = document.querySelector(".product-list");
+  let productObjects = [productOne, productTwo, productThree, productFour]
+  let productItems = "";
+  for (Product of productObjects){
+    productItems += Product.name + "" + Product.price;
+  }
+  productList.innerHTML = productItems;
+}
+displayproductList();

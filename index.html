@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <ul class="product-list"></ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stuff to buy</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div>
+        <h3>Crutches</h3><h3 class = "c">$59.99</h3><br>
+            <button onclick="AddOne()">Add To Cart</button><br>
+        <h3>Aircast Boot</h3><h3 class = "c">$67.99</h3><br>
+            <button onclick="AddTwo()">Add To Cart</button><br>
+        <h3>Knee Scooter</h3><h3 class = "c">$125.00</h3><br>
+            <button onclick="AddThree()">Add To Cart</button><br>
+    </div>
+    <hr>
+    <div>
+        <button onclick="CheckOut()">Check Out</button>
+    </div>
+    <div id="total-price"></div>
+  </body>
 </html>
